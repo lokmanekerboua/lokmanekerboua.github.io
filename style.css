@@ -6,20 +6,29 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: black;
+    z-index: 1;
+}
+
 nav {
     height: 80px;
     position: fixed;
-    z-index: 999;
+    top: 0;
+    width: 100%;
+    z-index: 100001;
     width: 100%;
     background-color: #000000;
-    filter: drop-shadow();
+    filter: drop-shadow(-2px 3px 5px rgb(26, 26, 26));
 }
 
 label.logo {
     font-size: 35px;
     font-weight: bold;
     color: white;
-    padding: 0 3%;
+    padding: 0 0%;
+    margin-top: -10%;
+    margin-left: 3%;
     line-height: 80px;
 }
 
@@ -99,6 +108,12 @@ nav #icon {
     }
 }
 
+@media (max-width:1040px) {
+    #mee {
+        left: -100%;
+    }
+}
+
 span {
     color: #f9004d;
 }
@@ -109,33 +124,54 @@ span {
 .me {
     height: 100vh;
     width: 100%;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
     background-size: cover;
     background-position: center;
 }
 
-.content {
+#mee {
     position: absolute;
-    top: 50%;
-    left: 8%;
-    padding-top: 10%;
-    transform: translateY(-50%);
+    display: grid;
+    grid-template: 100%;
+    align-items: center;
+    justify-items: center;
+    width: 50%;
+    height: 100%;
+    z-index: 100000;
+}
+
+#mee img {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    height: 55%;
+    width: 50%;
+    left: 5%;
+}
+
+.content {
+    position: relative;
+    float: right;
+    top: 45%;
+    padding-right: 5%;
+    padding-left: 5%;
+    transform: translateY(-30%);
 }
 
 h1 {
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     margin: 20px 0px 20px;
     font-size: 75px;
 }
 
 h3 {
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     font-size: 25px;
     margin-bottom: 50px;
 }
 
 h4 {
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     letter-spacing: 2px;
     font-size: 20px;
 }
@@ -171,3 +207,130 @@ h4 {
     right: 6px;
 }
 */
+
+.ab-text {
+    padding: 10px 20%;
+}
+
+.heading {
+    text-align: center;
+}
+
+.heading h1 {
+    font-size: 14px;
+    color: white;
+    letter-spacing: 0.5px;
+    margin-bottom: 30px;
+}
+
+.heading p {
+    color: white;
+    font-size: 12px;
+    line-height: 28px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+    grid-gap: 1.7rem;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.box {
+    height: 340px;
+    width: auto;
+    border-radius: 10px;
+    overflow: hidden;
+    background: gray;
+    transition: all 0.8s;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box1 {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url(img/pic.png) center center no-repeat;
+    background-size: cover;
+    z-index: 10000;
+}
+
+.box1:hover {
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+    opacity: 0.6;
+}
+
+.box2 {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url(img/pic.png) center center no-repeat;
+    background-size: cover;
+}
+
+.box2:hover {
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+    opacity: 0.6;
+}
+
+.box3 {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url(img/pic.png) center center no-repeat;
+    background-size: cover;
+}
+
+.box3:hover {
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+    opacity: 0.6;
+}
+
+.box4 {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url(img/pic.png) center center no-repeat;
+    background-size: cover;
+}
+
+.box4:hover {
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+    opacity: 0.6;
+}
+
+.box5 {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url(img/pic.png) center center no-repeat;
+    background-size: cover;
+}
+
+.box5:hover {
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+    opacity: 0.6;
+}
+
+.box6 {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url(img/pic.png) center center no-repeat;
+    background-size: cover;
+}
+
+.box6:hover {
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+    opacity: 0.6;
+}
+
+.in {
+    position: absolute;
+    bottom: 20px;
+    color: white;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.bottom {
+    text-align: center;
+    color: #adb5bd;
+    margin-top: 100px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    padding: 20px 20%;
+}
