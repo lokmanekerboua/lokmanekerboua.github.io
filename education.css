@@ -116,6 +116,10 @@ main {
 }
 
 main h2 {
+    color: #f9004d;
+}
+
+main h1 {
     color: white;
 }
 
@@ -125,7 +129,8 @@ main a {
 }
 
 .group {
-    margin-left: 5%;
+    padding-left: 7%;
+    padding-right: 7%;
 }
 
 

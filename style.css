@@ -151,7 +151,7 @@ span {
 
 .content {
     position: relative;
-    float: right;
+    float: left;
     top: 45%;
     padding-right: 5%;
     padding-left: 5%;
